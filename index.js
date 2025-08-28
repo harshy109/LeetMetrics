@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const isMatching = regex.test(username);
         if(!isMatching){
             alert("Invalid username");
+            return false;
         }
         return isMatching;
 
