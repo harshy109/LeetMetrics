@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const username = usernameInput.value;
         console.log("Loggin username: "+ username);
         console.log("Trimmed username:", username.trim());
-        console.log("Regex test result:", /^[a-zA-Z0-9_-]{1,250}$/.test(username.trim()));
+        console.log("Regex test result:", /^[a-zA-Z0-9_-]{1,25}$/.test(username.trim()));
 
         if(validateUsername(username)){
             fetchUserDetails(username);
